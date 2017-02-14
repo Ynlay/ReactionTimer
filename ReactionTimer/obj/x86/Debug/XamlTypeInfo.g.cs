@@ -132,17 +132,19 @@ namespace ReactionTimer.ReactionTimer_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "ReactionTimer.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "ReactionTimer.ReactionWindow";
+            _typeNameTable[4] = "ReactionTimer.ResultWindow";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::ReactionTimer.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::ReactionTimer.ReactionWindow);
+            _typeTable[4] = typeof(global::ReactionTimer.ResultWindow);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,6 +181,7 @@ namespace ReactionTimer.ReactionTimer_XamlTypeInfo
 
         private object Activate_0_MainPage() { return new global::ReactionTimer.MainPage(); }
         private object Activate_3_ReactionWindow() { return new global::ReactionTimer.ReactionWindow(); }
+        private object Activate_4_ResultWindow() { return new global::ReactionTimer.ResultWindow(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -208,6 +211,13 @@ namespace ReactionTimer.ReactionTimer_XamlTypeInfo
             case 3:   //  ReactionTimer.ReactionWindow
                 userType = new global::ReactionTimer.ReactionTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_ReactionWindow;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  ReactionTimer.ResultWindow
+                userType = new global::ReactionTimer.ReactionTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_ResultWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

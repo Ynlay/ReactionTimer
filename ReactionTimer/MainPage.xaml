@@ -7,12 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="Aquamarine">
+    <Grid Background="GreenYellow">
 
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" Margin="10" TextWrapping="Wrap" FontSize="20">
-            Welcome to my Reaction Time App!!!
-        </TextBlock>
-        <Button Content="Press me" FontSize="30" HorizontalAlignment="Center" 
-                VerticalAlignment="Center" Click="Button_Click" BorderBrush="Black"></Button>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" 
+                   TextAlignment="Center" Margin="20" TextWrapping="Wrap"
+                   FontSize="36" Text="Reaction Timer"/>
+
+
+         <Button Content="Start" FontSize="36" HorizontalAlignment="Center" 
+                VerticalAlignment="Center" Click="Button_Click" BorderBrush="Black"/>
+        </StackPanel>
+
     </Grid>
 </Page>

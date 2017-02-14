@@ -23,9 +23,20 @@ namespace ReactionTimer
     /// </summary>
     public sealed partial class ReactionWindow : Page
     {
+        private bool isRed;
+        private double score;
+        private int randomTime;
+        private Stopwatch stopwatchRed = new Stopwatch();
+
         public ReactionWindow()
         {
             this.InitializeComponent();
+            Random rng = new Random();
+            score = 0;
+            isRed = false;
+            var stopwatchRed = new Stopwatch(); 
+            randomTime = rng.Next(3, 10);
+            
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -33,6 +44,28 @@ namespace ReactionTimer
             this.Frame.Navigate(typeof(MainPage), null);
         }
 
-   
+       
+
+        private EventHandler<object> EventHandler(object tick)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void background_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+           this.Frame.Navigate(typeof(ResultWindow));
+           // ReactionBackground.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+        }
+
+        public bool getColor() // this will only be needed if i allow taps on green screen
+        {
+            return isRed;
+        }
+
+        public double getScore()
+        {
+            return score;
+        }
+
     }
 }

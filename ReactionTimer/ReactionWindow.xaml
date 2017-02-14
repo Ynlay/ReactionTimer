@@ -7,21 +7,25 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Name="background" Background="GreenYellow">
+    <Grid Name="ReactionBackground" Background="GreenYellow" IsTapEnabled="True" Tapped="background_Tapped">
 
+       
+
+       <Button FontFamily="Segoe MDL2 Assets" Grid.Column="0"
+               Content="&#xE0C4;" Name="BackButton" HorizontalAlignment="Left" 
+               VerticalAlignment="Top" FontSize="36" Click="BackButton_Click" RelativePanel.AlignLeftWithPanel="True"/>
         
-        <Button FontFamily="Segoe MDL2 Assets" Content="&#xE0C4;" Name="BackButton" HorizontalAlignment="Left" 
-                VerticalAlignment="Top" FontSize="36" Click="BackButton_Click" RelativePanel.AlignLeftWithPanel="True"></Button>
-        <TextBlock Name="Title" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextAlignment="Center" 
-                   FontSize="30" RelativePanel.AlignRightWith="BackButton">
-            This is the reaction time window.
-        </TextBlock>
 
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="30" TextAlignment="Center">
-            Once the background turns RED tap the screen.
-        </TextBlock>
 
-       
-       
+      
+        <TextBlock Name="myText" HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" TextWrapping="Wrap" 
+                   FontSize="30" TextAlignment="Center" 
+                   Text="Once the background turns RED tap the screen."/>
+
+      
+
+
+
     </Grid>
 </Page>

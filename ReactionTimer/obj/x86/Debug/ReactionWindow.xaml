@@ -7,22 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:ConnectionId='1' Name="background" Background="GreenYellow">
+    <Grid x:ConnectionId='1' Name="ReactionBackground" Background="GreenYellow" IsTapEnabled="True"                           >
 
+       
+
+       <Button x:ConnectionId='2' FontFamily="Segoe MDL2 Assets" Grid.Column="0"
+               Content="&#xE0C4;" Name="BackButton" HorizontalAlignment="Left" 
+               VerticalAlignment="Top" FontSize="36"                          RelativePanel.AlignLeftWithPanel="True"/>
         
-        <Button x:ConnectionId='2' FontFamily="Segoe MDL2 Assets" Content="&#xE0C4;" Name="BackButton" HorizontalAlignment="Left" 
-                VerticalAlignment="Top" FontSize="36"                          RelativePanel.AlignLeftWithPanel="True"></Button>
-        <TextBlock x:ConnectionId='3' Name="Title" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextAlignment="Center" 
-                   FontSize="30" RelativePanel.AlignRightWith="BackButton">
-            This is the reaction time window.
-        </TextBlock>
 
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="30" TextAlignment="Center">
-            Once the background turns RED tap the screen.
-        </TextBlock>
 
-       
-       
+      
+        <TextBlock x:ConnectionId='3' Name="myText" HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" TextWrapping="Wrap" 
+                   FontSize="30" TextAlignment="Center" 
+                   Text="Once the background turns RED tap the screen."/>
+
+      
+
+
+
     </Grid>
 </Page>
 

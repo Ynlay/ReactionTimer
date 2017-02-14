@@ -11,6 +11,15 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
       <RootProperty Name="Name" />
+      <RootProperty Name="IsTapEnabled" />
+      <RootEvent Name="Tapped" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />
@@ -19,7 +28,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Inlines" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -36,9 +45,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootMethod Name="GetAlignLeftWithPanel" />
       <RootMethod Name="SetAlignLeftWithPanel" />
-      <RootMethod Name="GetAlignRightWith" />
-      <RootMethod Name="SetAlignRightWith" />
     </RootType>
     <RootType FullName="ReactionTimer.ReactionWindow" />
+    <RootType FullName="ReactionTimer.ResultWindow" />
   </Roots.RootTypes>
 </Roots>
