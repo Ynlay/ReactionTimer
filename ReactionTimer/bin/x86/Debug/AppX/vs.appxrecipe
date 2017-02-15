@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>92a20014-365d-4db3-8f03-7f2022609af7</PackageIdentityName>
     <PackageIdentityPublisher>CN=Fotis</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Fotis\Documents\Visual Studio 2015\Projects\ReactionTimer\ReactionTimer\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Fotis\Documents\Visual Studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-14T22:38:20.606</Modified>
+      <Modified>2017-02-15T12:17:20.262</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\ReactionTimer.exe">
       <PackagePath>entrypoint\ReactionTimer.exe</PackagePath>
-      <Modified>2017-02-14T22:38:20.030</Modified>
+      <Modified>2017-02-15T12:17:19.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Fotis\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\ReactionTimer.xr.xml">
       <PackagePath>ReactionTimer.xr.xml</PackagePath>
-      <Modified>2017-02-14T22:34:25.272</Modified>
+      <Modified>2017-02-15T12:14:42.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-14T22:38:20.411</Modified>
+      <Modified>2017-02-15T12:17:20.029</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fotis\Documents\Visual Studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\ReactionTimer.exe">
+    <AppxPackagedFile Include="C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\ReactionTimer.exe">
       <PackagePath>ReactionTimer.exe</PackagePath>
-      <Modified>2017-02-14T22:38:20.603</Modified>
+      <Modified>2017-02-15T12:17:20.259</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

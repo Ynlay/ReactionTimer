@@ -14,16 +14,17 @@
        <Button x:ConnectionId='2' FontFamily="Segoe MDL2 Assets" Grid.Column="0"
                Content="&#xE0C4;" Name="BackButton" HorizontalAlignment="Left" 
                VerticalAlignment="Top" FontSize="36"                          RelativePanel.AlignLeftWithPanel="True"/>
-        
 
 
-      
-        <TextBlock x:ConnectionId='3' Name="myText" HorizontalAlignment="Center" 
-                   VerticalAlignment="Center" TextWrapping="Wrap" 
-                   FontSize="30" TextAlignment="Center" 
-                   Text="Once the background turns RED tap the screen."/>
 
-      
+       <TextBlock x:ConnectionId='3' Name="myText" HorizontalAlignment="Center" 
+                  VerticalAlignment="Center" TextWrapping="Wrap" 
+                  FontSize="30" TextAlignment="Center" 
+                  Text="Once the background turns RED tap the screen."/>
+
+           
+   
+
 
 
 

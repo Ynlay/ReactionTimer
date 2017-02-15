@@ -23,20 +23,27 @@ namespace ReactionTimer
     /// </summary>
     public sealed partial class ReactionWindow : Page
     {
-        private bool isRed;
-        private double score;
-        private int randomTime;
-        private Stopwatch stopwatchRed = new Stopwatch();
+        private static double score;
+        private Random rng = new Random();
+        private DispatcherTimer timer = new DispatcherTimer();
+        private Stopwatch timerRed = new Stopwatch();
 
         public ReactionWindow()
         {
-            this.InitializeComponent();
-            Random rng = new Random();
-            score = 0;
-            isRed = false;
-            var stopwatchRed = new Stopwatch(); 
-            randomTime = rng.Next(3, 10);
-            
+            this.InitializeComponent();   
+            timer.Interval = new TimeSpan(0, 0, 0, rng.Next(1,5), 0);
+            timer.Tick += timer_Tick;
+            timer.Start();
+                
+        }
+
+       
+        private void timer_Tick(object sender, object e)
+        {
+            ReactionBackground.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+            myText.Text = "TAP NOW!!!";
+            timerRed.Start();
+            timer.Stop();           
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -44,25 +51,14 @@ namespace ReactionTimer
             this.Frame.Navigate(typeof(MainPage), null);
         }
 
-       
-
-        private EventHandler<object> EventHandler(object tick)
-        {
-            throw new NotImplementedException();
-        }
-
         private void background_Tapped(object sender, TappedRoutedEventArgs e)
         {
-           this.Frame.Navigate(typeof(ResultWindow));
-           // ReactionBackground.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+            score = timerRed.ElapsedMilliseconds;
+            timerRed.Stop();
+            this.Frame.Navigate(typeof(ResultWindow));                       
         }
 
-        public bool getColor() // this will only be needed if i allow taps on green screen
-        {
-            return isRed;
-        }
-
-        public double getScore()
+        public static double getScore()
         {
             return score;
         }

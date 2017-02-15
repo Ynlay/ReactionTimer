@@ -25,10 +25,8 @@ namespace ReactionTimer
         public ResultWindow()
         {
             this.InitializeComponent();
-            ReactionWindow window = new ReactionWindow();
-            if (window.getScore() == 0) Result.Text = "TOO SOON";
-            else Result.Text += window.getScore();
-           
+            if (ReactionWindow.getScore() == 0) Result.Text = "TOO SOON";
+            else Result.Text += ReactionWindow.getScore() + " Miliseconds";          
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

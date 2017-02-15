@@ -10,13 +10,13 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>92a20014-365d-4db3-8f03-7f2022609af7</PackageIdentityName>
     <PackageIdentityPublisher>CN=Fotis</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Fotis\Documents\Visual Studio 2015\Projects\ReactionTimer\ReactionTimer\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Fotis\Documents\Visual Studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
@@ -374,7 +374,7 @@
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Fotis\Documents\Visual Studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\ReactionTimer.exe">
+    <AppxPackagedFile Include="C:\Users\Fotis\documents\visual studio 2015\Projects\ReactionTimer\ReactionTimer\bin\x86\Debug\Core\ReactionTimer.exe">
       <PackagePath>ReactionTimer.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
