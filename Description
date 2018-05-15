@@ -1,0 +1,4 @@
+This a UWP created for the msp program. The application's purpose is to test your reaction time. 
+Once the color goes red you need to tap as fast as possible.
+Your reaction time is then revealed based on how long it took you to tap the screen.
+If you tap before the red screen appears it doesn't count as reaction time.
